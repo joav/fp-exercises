@@ -11,7 +11,7 @@ var words = split(" ");
 //==============
 // Use map to make a new words fn that works on an array of strings.
 
-var sentences = undefined;
+var sentences = map(words);
 
 
 // Exercise 2
