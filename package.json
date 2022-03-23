@@ -1,0 +1,22 @@
+{
+  "name": "fp-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "utils.js",
+  "scripts": {
+    "test": "mocha exercises/**/*_spec.js",
+    "test:w": "mocha exercises/**/*_spec.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "chai": "^4.3.6",
+    "lodash": "^4.17.21",
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  }
+}
