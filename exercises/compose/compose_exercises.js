@@ -51,12 +51,12 @@ var availablePrices = _.compose(join(', '), map(formatPrice), filter(_.prop('in_
 // ============
 // Refactor to pointfree. Hint: you can use _.flip()
 
-var fastestCar = function (cars) {
-    var sorted = _.sortBy(function (car) { return car.horsepower }, cars);
-    var fastest = _.last(sorted);
-    return fastest.name + ' is the fastest';
-};
-
+var fastestCar = _.compose(
+    function (name) {return name + ' is the fastest';},
+    _.prop('name'),
+    _.last,
+    _.sortBy(_.prop('horsepower'))
+);
 
 module.exports = {
     CARS: CARS,
