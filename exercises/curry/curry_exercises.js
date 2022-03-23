@@ -5,10 +5,7 @@ var _ = require('ramda');
 // Exercise 1
 //==============
 // Refactor to remove all arguments by partially applying the function
-
-var words = function (str) {
-    return split(' ', str);
-};
+var words = split(" ");
 
 // Exercise 1a
 //==============
