@@ -44,7 +44,7 @@ var slice = _.curry(function(from, to, arr) {
 // Bonus 2:
 // ============
 // use slice to define a function "take" that takes n elements. Make it curried
-var take = undefined;
+var take = slice(0);
 
 
 module.exports = {
