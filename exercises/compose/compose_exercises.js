@@ -43,12 +43,8 @@ var sanitizeNames = map(_.compose(toLowerCase, _underscore, _.prop('name')));
 // Bonus 1:
 // ============
 // Refactor availablePrices with compose.
-
-var availablePrices = _.compose(
-    join(', '),
-    map(_.compose(accounting.formatMoney, _.prop('dollar_value'))),
-    filter(_.prop('in_stock'))
-);
+var formatPrice = _.compose(accounting.formatMoney, _.prop('dollar_value'));
+var availablePrices = _.compose(join(', '), map(formatPrice), filter(_.prop('in_stock')));
 
 
 // Bonus 2:
