@@ -4,8 +4,10 @@
   "description": "",
   "main": "utils.js",
   "scripts": {
-    "test": "mocha exercises/**/*_spec.js",
-    "test:w": "mocha exercises/**/*_spec.js --watch"
+    "test-part1": "mocha exercises-part1/**/*_spec.js",
+    "test-part1:w": "mocha exercises-part1/**/*_spec.js --watch",
+    "test-part2": "mocha exercises-part2/**/*_spec.js",
+    "test-part2:w": "mocha exercises-part2/**/*_spec.js --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "dependencies": {
     "accounting": "^0.4.1",
     "chai": "^4.3.6",
+    "data.task": "^3.1.2",
     "lodash": "^4.17.21",
     "ramda": "^0.28.0"
   },
