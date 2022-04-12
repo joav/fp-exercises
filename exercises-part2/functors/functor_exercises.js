@@ -26,7 +26,7 @@ var safeProp = _.curry(function (x, o) { return Maybe.of(o[x]); });
 
 var user = { id: 2, name: "Albert" };
 
-var ex3 = undefined;
+var ex3 = _.compose(_.map(_.head), safeProp('name'));
 
 
 
