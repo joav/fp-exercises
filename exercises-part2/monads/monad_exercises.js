@@ -18,7 +18,7 @@ var user = {
   }
 };
 
-var ex1 = undefined;
+var ex1 = _.compose(chain(safeProp('name')), chain(safeProp('street')), safeProp('address'));
 
 
 // Exercise 2
