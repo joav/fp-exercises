@@ -15,7 +15,7 @@ var ex1 = _.map(_.add(1));
 // Use _.head to get the first element of the list
 var xs = Identity.of(['do', 'ray', 'me', 'fa', 'so', 'la', 'ti', 'do']);
 
-var ex2 = undefined;
+var ex2 = _.map(_.head);
 
 
 
