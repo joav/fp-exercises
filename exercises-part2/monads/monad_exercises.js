@@ -36,7 +36,7 @@ var pureLog = function(x) {
   });
 }
 
-var ex2 = undefined;
+var ex2 = _.compose(chain(_.compose(pureLog, _.last, split('\\'))), getFile);
 
 
 
