@@ -91,7 +91,7 @@ var validateEmail = function(x){
 }
 
 //  ex4 :: Email -> Either String (IO String)
-var ex4 = undefined;
+var ex4 = _.compose(_.map(_.compose(chain(emailBlast), addToMailingList)), validateEmail);
 
 
 module.exports = {ex1: ex1, ex2: ex2, ex3: ex3, ex4: ex4, user: user}
